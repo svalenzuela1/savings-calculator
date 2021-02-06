@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Savings Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+<div id="container">
+    <h1>Savings Calculator</h1>
+    <br id="calculator">
+
+
+    <form>
+        <p>Input Product Amount </p>
+        $<input id="amount" type="text" placeholder="Amount">
+
+        <p> Is it on sale? By how much?</p>
+        <select id="percentage">
+            <option value="0">-- Choose an Option --</option>
+            <option value="1">100&#37; &#45; One Hundred</option>
+            <option value="0.9">90&#37; &#45; Ninety</option>
+            <option value="0.8">80&#37; &#45; Eighty</option>
+            <option value="0.7">70&#37; &#45; Seventy</option>
+            <option value="0.6">60&#37; &#45; Sixty</option>
+            <option value="0.5">50&#37; &#45; Fifty</option>
+            <option value="0.4">40&#37; &#45; Forty</option>
+            <option value="0.3">30&#37; &#45; Thirty</option>
+            <option value="0.2">20&#37; &#45; Twenty</option>
+            <option value="0.1">10&#37; &#45; Ten</option>
+            <option    value="0.0875">8.875&#37; &#45;       Sales Tax</option>
+            <option value="0.01">1&#37; &#45; One</option>
+        </select>
+
+    </form>
+    <p>How many people are paying?</p>
+    <input id="people" type="text" placeholder="Number of People"> People
+    <br> </br> <button type="button" id="calculate">Calculate!</button>
+
+    <div id="output">
+        <p id="savings"> Each person is saving</p>
+        <p id="number">0.00 </p>
+    </div>
+</div>
+
+
+</body>
+</html>
