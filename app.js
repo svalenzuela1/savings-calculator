@@ -20,7 +20,8 @@ function calculate() {
 }
 
 
-document.getElementById("calculate").onclick = function() {
-    calculate();
-
-};
+    window.onload = function(){
+        document.getElementById("calculate").onclick=function(){
+            calculate();
+        }
+    }
